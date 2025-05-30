@@ -27,7 +27,12 @@ uname -v = #29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /home/fentahun/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash
+PATH: /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/.venv/bin
+PATH: /home/fentahun/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash
+PATH: /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/.venv/bin
 PATH: /home/fentahun/anaconda3/bin
+PATH: /home/fentahun/anaconda3/condabin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -691,7 +696,7 @@ configure:20557: $? = 0
 configure:20575: result: yes
 configure:20582: checking for _doprnt
 configure:20638: gcc -o conftest -g -O2   conftest.c -lpthread -ldl  >&5
-/usr/bin/ld: /tmp/ccTR3VbG.o: in function `main':
+/usr/bin/ld: /tmp/ccpkmcJ7.o: in function `main':
 /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/ta-lib/conftest.c:74: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:20644: $? = 1
@@ -782,7 +787,7 @@ conftest.c:63:6: warning: conflicting types for built-in function 'floor'; expec
 conftest.c:51:1: note: 'floor' is declared in header '<math.h>'
    50 | # include <limits.h>
    51 | #else
-/usr/bin/ld: /tmp/ccA8t0tn.o: in function `main':
+/usr/bin/ld: /tmp/ccowSdQ9.o: in function `main':
 /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/ta-lib/conftest.c:74: undefined reference to `floor'
 collect2: error: ld returned 1 exit status
 configure:20757: $? = 1
@@ -918,7 +923,7 @@ conftest.c:69:6: warning: conflicting types for built-in function 'pow'; expecte
 conftest.c:57:1: note: 'pow' is declared in header '<math.h>'
    56 | # include <limits.h>
    57 | #else
-/usr/bin/ld: /tmp/ccWeSogh.o: in function `main':
+/usr/bin/ld: /tmp/ccFTDOQj.o: in function `main':
 /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/ta-lib/conftest.c:80: undefined reference to `pow'
 collect2: error: ld returned 1 exit status
 configure:20757: $? = 1
@@ -1015,7 +1020,7 @@ conftest.c:69:6: warning: conflicting types for built-in function 'sqrt'; expect
 conftest.c:57:1: note: 'sqrt' is declared in header '<math.h>'
    56 | # include <limits.h>
    57 | #else
-/usr/bin/ld: /tmp/cc83XgM1.o: in function `main':
+/usr/bin/ld: /tmp/ccoZMGEz.o: in function `main':
 /home/fentahun/KAIM-Week1/nova-financial-insights-challenge-week1/ta-lib/conftest.c:80: undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:20757: $? = 1
@@ -1189,6 +1194,7 @@ config.status:673: creating ta-lib-config
 config.status:673: creating ta-lib.spec
 config.status:673: creating ta-lib.dpkg
 config.status:673: creating include/ta_config.h
+config.status:941: include/ta_config.h is unchanged
 config.status:987: executing depfiles commands
 
 ## ---------------- ##

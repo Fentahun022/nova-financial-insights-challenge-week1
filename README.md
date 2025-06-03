@@ -55,6 +55,12 @@ Follow these steps to set up the project environment:
 *   **Natural Language Processing (NLP):** NLTK, TextBlob
 *   **Version Control:**  GitHub
 *   **Development Environment:** Jupyter Notebooks, VS Code
+## Continuous Integration (CI)
 
+This project utilizes GitHub Actions for Continuous Integration. The CI pipeline is defined in `.github/workflows/unittests.yml` and performs the following checks on each push or pull request to the `main` branch:
+
+*   **Linting:** Code is checked for style and quality using `flake8`.
+*   **Python Version Compatibility:** Runs checks against specified Python versions.
+*   **(Future Enhancement) Unit Tests:** The pipeline is set up to run unit tests 
 
 

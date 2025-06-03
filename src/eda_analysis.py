@@ -90,8 +90,6 @@ def extract_common_keywords(df: pd.DataFrame, processed_text_col: str = 'process
     plt.xlabel('Frequency')
     plt.ylabel('Word')
     plt.show()
-
-    # Bigrams
     try:
         vectorizer = CountVectorizer(ngram_range=(2, 2), max_features=top_n)
         bigram_matrix = vectorizer.fit_transform(df[processed_text_col].dropna())

@@ -4,8 +4,6 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-
-# Ensure NLTK resources are available
 try:
     stopwords.words('english')
     word_tokenize("test")
@@ -42,7 +40,7 @@ def preprocess_text_data(df: pd.DataFrame, text_col: str = 'headline') -> pd.Dat
     """Adds processed text columns for EDA and NLP."""
     df_copy = df.copy()
     if text_col not in df_copy.columns:
-        print(f"Warning: Column '{text_col}' not found for preprocessing.")
+        
         return df_copy
 
     df_copy['headline_length'] = df_copy[text_col].astype(str).str.len()
@@ -55,7 +53,6 @@ def preprocess_text_data(df: pd.DataFrame, text_col: str = 'headline') -> pd.Dat
         text = text.lower()
         text = re.sub(r'\W+', ' ', text)
         tokens = word_tokenize(text)
-        # Keep words with > 2 chars, not in stopwords
         tokens = [word for word in tokens if len(word) > 2 and word not in stop_words_set]
         return " ".join(tokens)
 
